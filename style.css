@@ -1,0 +1,132 @@
+
+/* Styles shared by every page */
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #183b3b;
+    background-color: #f4fbf8;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #087e8b;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #164e63;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    margin: 3px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #2c7a7b;
+}
+
+/* Highlights the current page */
+nav a.active {
+    background-color: #ffd166;
+    color: #183b3b;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h2 {
+    color: #087e8b;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+figure {
+    margin: 0;
+    flex: 1 1 300px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    padding: 8px 0;
+    font-style: italic;
+    color: #476568;
+}
+
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Special requirements for the home page */
+.home-page {
+    background-color: #f4fbf8;
+    background-image:
+        url("images/decoration.png"),
+        url("images/pattern.png");
+    background-repeat: no-repeat, repeat;
+    background-position: right 25px top 210px, left top;
+}
+
+.home-page main {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+.home-page ul {
+    list-style-image: url("images/flower-bullet.png");
+}
+
+.home-page li {
+    padding: 5px;
+}
+
+.home-page li a {
+    color: #087e8b;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 12px;
+        padding: 16px;
+    }
+}

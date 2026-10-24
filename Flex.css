@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: navy;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+aside {
+    width: 20%;
+}
+
+main {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid lightgray;
+    box-shadow: 3px 3px 4px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+.footer-links a {
+    display: block;
+    color: navy;
+}
+
+footer p {
+    margin-top: 20px;
+}

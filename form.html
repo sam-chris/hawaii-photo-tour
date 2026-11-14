@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sam's Web Design Class</h1>
+  </header>
+
+  <main>
+
+    <h2>Class Registration Form</h2>
+
+    <form action="formprocessing.html" method="post">
+
+      <div class="form-row">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+
+      <div class="form-row">
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass">
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+      </div>
+
+      <div class="form-row">
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday">
+      </div>
+
+      <div class="form-row">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value="">------</option>
+          <option value="HI">Hawaii</option>
+          <option value="CA">California</option>
+          <option value="UT">Utah</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>About You</legend>
+
+        <div class="form-row">
+          <label for="year">Class Year</label>
+          <select name="year" id="year">
+            <option value="">Choose one</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="gender-male">Gender</label>
+          <div class="choice">
+            <label>
+              <input type="radio" name="gender" id="gender-male" value="male"> Male
+            </label>
+
+            <label>
+              <input type="radio" name="gender" id="gender-female" value="female"> Female
+            </label>
+
+            <label>
+              <input type="radio" name="gender" id="gender-other" value="other"> Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+
+      </fieldset>
+
+      <div class="form-row">
+        <label class="check">
+          <input type="checkbox" name="remember"> Remember Me?
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label class="check">
+          <input type="checkbox" name="agree" required> I agree to the terms.
+        </label>
+      </div>
+
+      <div class="form-row">
+        <span class="spacer"></span>
+        <input type="submit" value="Sign Up">
+      </div>
+
+    </form>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Sam
+  </footer>
+
+</body>
+</html>
